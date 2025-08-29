@@ -135,8 +135,8 @@ Anser:★★★Java Script  এ Event হলো domer full জিনিস এ�
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
 
 Anser:★★★preventDefault() আর stopPropagation() – দুটোই event handling এ ব্যবহার হয়, কিন্তু কাজ আলাদা।
-      ★preventDefault()Element এর default কাজ বন্ধ করে (যেমন form submit, link redirect)যখন browser এর default action চাই না ।
-      ★stopPropagation()Event bubbling/capturing বন্ধ করে দেয় যখন event শুধু child এ থামাতে চাই, parent এ যেতে দিতে চাই না ।
+★preventDefault()Element এর default কাজ বন্ধ করে (যেমন form submit, link redirect)যখন browser এর default action চাই না ।
+★stopPropagation()Event bubbling/capturing বন্ধ করে দেয় যখন event শুধু child এ থামাতে চাই, parent এ যেতে দিতে চাই না ।
 ---
 
 ## 🧪 Challenges Part (10 Marks)
