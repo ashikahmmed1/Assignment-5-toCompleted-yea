@@ -3,7 +3,7 @@ function getElement(id){
     const element = document.getElementById(id);
     return element;
 }
-
+// Call Buttons
 const cartBtn = document.getElementsByClassName('cart-btn');
 let star = 100;
 for(let cartButton of cartBtn) {
