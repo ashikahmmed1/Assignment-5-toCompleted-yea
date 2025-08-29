@@ -41,6 +41,7 @@ for(let cartButton of cartBtn) {
     })
 }
 
+// Heart Icons
  document.getElementById('btn-clear').addEventListener('click', function(){
     const cartContainer = getElement('card-input');
     cartContainer.innerHTML = '';
@@ -71,15 +72,23 @@ const copyCartBtn = document.getElementsByClassName('copy-cart-btn');
 for(let copy of copyCartBtn) {
     copy.addEventListener('click', function(){
         const copyBtn= copy.parentNode.parentNode.parentNode.parentNode.parentNode
-        .parentNode.parentNode.childNodes[1].childNodes[3].childNodes[5].childNodes[1].childNodes[1].childNodes[0]
-        console.log(copyBtn)
-
+        .parentNode.parentNode.childNodes[1].childNodes[3].childNodes[5].childNodes[1].childNodes[1].childNodes[0].innerText;
+        const copyNum= copy.parentNode.parentNode.childNodes[7].innerText;
+        console.log(copyNum);
+        navigator.clipboard.writeText(copyNum)
+        // **Copy button**
+        .then(() => {
+        alert(`Number copied. ${copyNum}`);
+        })
+        .catch(err => {
+          console.error("Failed to copy: ", err);
+        })
         const totalCopy = getElement("copy-nav").textContent;
         const ollTotalCopy = Number(totalCopy) + 1;
         getElement("copy-nav").textContent = ollTotalCopy;
 
     }) 
-    
+     
 }           
 
 

@@ -111,11 +111,32 @@ You have to create a `Readme.md` file. and write down following questions. Dont 
 ### 6. Answer the following questions clearly:
 
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
+Anser : ★★★  এদেরকে বলা হয় object  এরা (array of object)  মতো কাজ করে। 
+★ getElementById  দিয়ে মূলত  নিদিষ্ট কোনো elements দরা যায়। 
+★ getElementByClassName দিয়ে একের অধিক element দরে (css   class use করে) manipulate করা যায়। Java Script cod গুলো সাজাতে সহোজ হয়।
+★★★querySeletor  / querySeletorAll হলো একটি elements এদের লওখার জন্য শেষ () ব্যবহার করতে হয়। 
+★ querySeletor হলো কোনো নিদিষ্ট (id) বা যে কোনো কিছু  প্রথম element  select  করবে। কিছু না পাওয়া গেলে nall দেয়, এক। 
+★ querySeletorAll যতো গুলো (id)  বা অন্য কিছু যার সাথে মিলবে সেই সব elements সব নিবে।  HTML document এক বা একাধিক Aliment clloction   এটি querySeletorAll array () ব্যবহার করে পাওয়া যায়, ডাবল।
+
+
 2. How do you **create and insert a new element into the DOM**?
+
+Anser:★★★Dom হলো document  object model,  website এর html pag কে document বলে। Dom মূলত  object আকারে দেখে। 
+      পুরো dom কে tree structure আকারে সাজানো হয়। যেখানে প্রতিটি (object) parent child  এর মত কাজ করে । এই dom কেই 
+      programming interface বলে। উদাহরণ : document. createElement()
 3. What is **Event Bubbling** and how does it work?
+
+Anser:★★★Event Bubbling হচ্ছে JavaScript এর একটি মেকানিজম যেখানে কোনো child element এ event ঘটলে সেটা
+       প্রথমে ওই child এ কাজ করে, তারপর ধাপে ধাপে parent → grandparent → document পর্যন্ত “bubble up” হয়।
 4. What is **Event Delegation** in JavaScript? Why is it useful?
+
+Anser:★★★Java Script  এ Event হলো domer full জিনিস এটি দাঁড়া আমরা dynamic / interactive wev বানানো হয়। যেমন : onClick 
+জাভাস্ক্রিপ্টে ইভেন্ট ডেলিগেশন হলো একটি প্যাটার্ন যেখানে আপনি কোনো নির্দিষ্ট DOM উপাদানের পরিবর্তে তার একটি প্যারেন্ট বা অ্যানসেস্টর উপাদানে ইভেন্ট হ্যান্ডলার যুক্ত করেন।
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
 
+Anser:★★★preventDefault() আর stopPropagation() – দুটোই event handling এ ব্যবহার হয়, কিন্তু কাজ আলাদা।
+      ★preventDefault()Element এর default কাজ বন্ধ করে (যেমন form submit, link redirect)যখন browser এর default action চাই না ।
+      ★stopPropagation()Event bubbling/capturing বন্ধ করে দেয় যখন event শুধু child এ থামাতে চাই, parent এ যেতে দিতে চাই না ।
 ---
 
 ## 🧪 Challenges Part (10 Marks)
